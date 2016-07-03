@@ -1,3 +1,10 @@
 # gcp-spring-boot-app
 
-Basic spring boot application for the GCP continuous delivery starter pack
+A very basic Spring Boot Application that is used as part of a GCP(Google Cloud Platform) continuous delivery starter pack
+
+The application can be started locally using:
+
+```
+mvn spring-boot:run
+```
+
