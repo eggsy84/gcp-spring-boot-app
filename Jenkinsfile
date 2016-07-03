@@ -1,4 +1,4 @@
-node('cn-jenkins-slave') {
+node('jenkins-slave') {
 
     // Project name will be passed in as a parameter
     def project = '${GCP_PROJECT_NAME}'
