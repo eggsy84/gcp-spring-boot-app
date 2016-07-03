@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-service
+  labels:
+    app: app-service
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+      name: frontend-http
+      targetPort: 8080
+      protocol: TCP
+  selector:
+    name: spring-boot-app
