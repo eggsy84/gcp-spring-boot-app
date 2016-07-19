@@ -26,7 +26,7 @@ node('build-slave') {
     sh("docker build -t ${imageTag} .")
 
     stage 'Push images to GCR'
-    sh("gcloud auth activate-service-account --key-file /opt/config/gcloud-svc-account")
+    sh("gcloud auth activate-service-account --key-file /opt/config/docker-meetup-a08ce8d4d8bc.json")
     sh("gcloud config set project ${project}")
     sh("gcloud docker push ${imageTag}")
 
