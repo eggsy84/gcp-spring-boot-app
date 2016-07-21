@@ -11,6 +11,6 @@ public class HomeController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String showHomePage() {
-        return "Welcome to v0.0.1 of the application";
+        return "Welcome to v0.0.2 of the application";
     }
 }
