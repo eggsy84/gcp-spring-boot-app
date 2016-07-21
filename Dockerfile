@@ -1,6 +1,6 @@
 FROM anapsix/alpine-java:jre8
 
-MAINTAINER James Heggs eggsy@eggsylife.co.uk
+MAINTAINER James Heggs jimbobegg@hotmail.com
 
 ADD target/spring-boot-app*.jar /spring-boot-app.jar
 RUN sh -c 'touch /spring-boot-app.jar'
