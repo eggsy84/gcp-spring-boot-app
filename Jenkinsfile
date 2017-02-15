@@ -63,7 +63,8 @@ podTemplate(label: 'jnlp', containers: [
       }
 
       stage('Output service external address') {
-        sh "echo 'Application up and running on ${FRONTEND_ADDRESS}'"
+        sh("echo 'Application up and running on'")
+        sh("cat frontend_service_address")
       }
   }
 }
