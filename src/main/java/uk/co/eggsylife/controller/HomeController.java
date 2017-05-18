@@ -11,6 +11,6 @@ public class HomeController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String showHomePage() {
-        return "<h2>Hello Continuous Lifecycle London</h2><h3>Version 1.0.0 of the Application</h3>";
+        return "<h2>Hello Continuous Lifecycle London</h2><h3>Version 1.0.1 of the Application</h3>";
     }
 }
